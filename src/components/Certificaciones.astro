@@ -1,20 +1,16 @@
 ---
 import { Image } from 'astro:assets';
-import BigDataeIA from './public/imagenes/BigDataeIA.png';
 import { getLangFromUrl } from '@/i18n/utils.ts';
-import Intermedio from './public/imagenes/Intermedio.jpg';
-import Basico from './public/imagenes/Basico.jpg';
 
 
 const certificateImages = {
-  "Big Data en el sector transporte": BigDataeIA,
-  "C# Básico": Basico,
-  "C# Intermedio": Intermedio,
-  "Big Data in the Transport Sector": BigDataeIA, // Clave en inglés
-  "C# Basic": Basico, 
-  "C# Intermediate": Intermedio
+  "Big Data en el sector transporte": '/imagenes/BigDataeIA.png',
+  "C# Básico": '/imagenes/Basico.jpg',
+  "C# Intermedio": '/imagenes/Intermedio.jpg',
+  "Big Data in the Transport Sector": '/imagenes/BigDataeIA.png', // Clave en inglés
+  "C# Basic": '/imagenes/Basico.jpg', 
+  "C# Intermediate": '/imagenes/Intermedio.jpg'
 };
-
 // Obtener idioma actual desde la URL
 const lang = getLangFromUrl(Astro.url);
 
