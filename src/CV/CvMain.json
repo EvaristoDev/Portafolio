@@ -84,19 +84,19 @@
       "name": "Big Data en el sector transporte",
       "date": "2023-01-01",
       "issuer": "Fundacion Maude",
-      "url": "BigDataeIA.webp"
+      "url": "BigDataeIA.png"
     },
     {
       "name": "C# Básico",
       "date": "2023-02-01",
       "issuer": "Udemy",
-      "url": "Basico.webp"
+      "url": "Basico.jpg"
     },
     {
       "name": "C# Intermedio",
       "date": "2023-03-01",
       "issuer": "Udemy",
-      "url": "Intermedio.webp"
+      "url": "Intermedio.jpg"
     }
   ]
 }
