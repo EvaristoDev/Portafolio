@@ -1,0 +1,20 @@
+---
+import Section from "../SectionMinimalist.astro"
+import { getLangFromUrl } from "@/i18n/utils.ts";
+
+// Obtener idioma actual desde la URL
+const lang = getLangFromUrl(Astro.url);
+const basics = lang === "en"
+? (await import("@/CV/cv_english.json")).basics
+: (await import("@/CV/cv.json")).basics;
+// Importar el JSON de traducciones
+const translations = await import('@/i18n/traducciones.json');
+const t = translations[lang];
+const { summary } = basics
+---
+
+<Section title={t.about_me}>
+  <p>
+    {summary}
+  </p>
+</Section>

@@ -1,0 +1,85 @@
+---
+import { Image } from 'astro:assets';
+import ProfilePhoto from '../assets/Evaristo.png';
+import { getLangFromUrl } from '@/i18n/utils.ts';
+
+// Obtener idioma actual desde la URL
+const lang = getLangFromUrl(Astro.url);
+
+// Importar el JSON correspondiente al idioma
+const basicsmain = lang === 'en'
+  ? (await import('@/CV/CvMainEnglish.json')).basicsmain
+  : (await import('@/CV/CvMain.json')).basicsmain;
+---
+<section id="about" class="py-16 pt-30 md:ml-40">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center md:gap-8">
+      <!-- Foto de perfil -->
+      <div class="flex-shrink-0 w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden">
+        <Image
+          src={ProfilePhoto}
+          alt="Foto de perfil"
+          width={256}
+          height={256}
+          class="w-full h-full object-cover"
+          style="mask-image: linear-gradient(black 80%, transparent); -webkit-mask-image: linear-gradient(black 80%, transparent);"
+        />
+      </div>
+
+      <!-- Información sobre mí -->
+      <div class="text-left pl-8 md:pl-16 md:mr-32 mt-6 md:mt-0">
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">{basicsmain.name}</h3>
+        <p 
+  class="text-gray-600 mb-4 whitespace-pre-line" 
+  set:html={basicsmain.summary
+    .replace(/\n/g, '<br>')
+    .replace(/\.NET/g, '<span class="text-blue-400 font-semibold">.NET</span>')
+    .replace(/TFG/g, '<span class="text-blue-400 font-semibold">TFG</span>')
+    .replace(/grado superior en desarrollo web/g, '<span class="text-blue-400 font-semibold">grado superior en desarrollo web</span>')
+    .replace(/grado medio en sistemas microinformáticos y redes/g, '<span class="text-blue-400 font-semibold">grado medio en sistemas microinformáticos y redes</span>')
+    .replace(/compartir conocimientos/g, '<span class="text-blue-400 font-semibold">compartir conocimientos</span>')
+    .replace(/escucha activa/g, '<span class="text-blue-400 font-semibold">escucha activa</span>')
+    .replace(/perfeccionar mis habilidades/g, '<span class="text-blue-400 font-semibold">perfeccionar mis habilidades</span>')
+    .replace(/soluciones innovadoras/g, '<span class="text-blue-400 font-semibold">soluciones innovadoras</span>')
+    .replace(/tecnologías emergentes/g, '<span class="text-blue-400 font-semibold">tecnologías emergentes</span>')
+  }
+/>
+        <div class="flex flex-col gap-2">
+          {basicsmain.profiles.map((profile) => (
+            <a 
+              href={profile.network === "Correo" ? `mailto:${profile.url}` : profile.url} 
+              class="text-blue-600 hover:text-blue-400 font-semibold inline-flex items-center gap-2 w-fit max-w-full"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {profile.network === "LinkedIn" && (
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                  <path d="M8 11l0 5" />
+                  <path d="M8 8l0 .01" />
+                  <path d="M12 16l0 -5" />
+                  <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg>
+              )}
+              {profile.network === "GitHub" && (
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                </svg>
+              )}
+              {(profile.network === "Correo" || profile.network === "Mail") && (
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M3 6l9 6l9 -6" />
+                  <path d="M21 18h-18a2 2 0 0 1 -2 -2v-8a2 2 0 0 1 2 -2h18a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2z" />
+                </svg>
+              )}
+              {profile.network}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

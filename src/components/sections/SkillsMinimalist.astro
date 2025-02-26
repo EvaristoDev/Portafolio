@@ -1,0 +1,93 @@
+---
+import Section from "../SectionMinimalist.astro"
+import HTML from "@/icons/htmlMinimalist.astro"
+import CSS from "@/icons/cssMinimalist.astro"
+import JavaScript from "@/icons/javascriptMinimalist.astro"
+import TypeScript from "@/icons/typeMinimalist.astro"
+import React from "@/icons/reactMinimalist.astro"
+import Node from "@/icons/nodeMinimalist.astro"
+import MySQL from "@/icons/sqlMinimalist.astro"
+import Git from "@/icons/gitMinimalist.astro"
+import GitHub from "@/icons/GitHub.astro"
+import Tailwind from "@/icons/tailwindMinimalist.astro"
+import Next from "@/icons/nextMinimalist.astro"
+import NET from "@/icons/.NETMinimalist.astro"
+import Csharp from "@/icons/CsharpMinimalist.astro"
+import VisualBasic from "@/icons/VisualBasicMinimalist.astro"
+import { skills } from "@/CV/cv.json"
+import Swift from "@/icons/swiftMinimalist.astro"
+import SwiftUI from "@/icons/swiftuiMinimalist.astro"
+import Kotlin from "@/icons/kotlinMinimalist.astro"
+import Flutter from "@/icons/flutterMinimalist.astro"
+import Java from "@/icons/icons/Java.astro"
+import Python from "@/icons/icons/Python.astro"
+import { getLangFromUrl } from "@/i18n/utils.ts";
+
+const lang = getLangFromUrl(Astro.url);
+const projects = lang === "en"
+
+const SKILLS_ICONS: Record<string, any> = {
+  HTML,
+  CSS,
+  JavaScript,
+  TypeScript,
+  React,
+  Node,
+  NET,
+  Csharp,
+  Java,
+  Python,
+  VisualBasic,
+  MySQL,
+  Git,
+  GitHub,
+  Next,
+  Tailwind,
+  Swift,
+  SwiftUI,
+  Kotlin,
+  Flutter,
+}
+
+// Importar el JSON de traducciones
+const translations = await import('@/i18n/traducciones.json');
+const t = translations[lang];
+
+---
+
+<Section title={t.skills}>
+  <ul>
+    {
+      skills.map(({ name }) => {
+        const iconName = name === "Next.js" ? "Next" : name
+        const Icon = SKILLS_ICONS[iconName]
+
+        return (
+          <li>
+            {Icon && <Icon />} <span>{name}</span>
+          </li>
+        )
+      })
+    }
+  </ul>
+</Section>
+
+<style>
+  ul {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  li {
+    align-items: center;
+    background: #eee;
+    border-radius: 6px;
+    color: black;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 500;
+    gap: 4px;
+    padding: 0.2rem 0.6rem;
+  }
+</style>

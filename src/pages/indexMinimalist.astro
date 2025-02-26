@@ -1,0 +1,51 @@
+---
+import Layout from "@/layouts/LayoutMinimalist.astro"
+
+import About from "@/components/sections/AboutMinimalist.astro"
+import Education from "@/components/sections/EducationMinimalist.astro"
+import Experience from "@/components/sections/ExperienceMinimalist.astro"
+import Hero from "@/components/sections/HeroMinimalist.astro"
+import Projects from "@/components/sections/ProjectsMinimalist.astro"
+import Skills from "@/components/sections/SkillsMinimalist.astro"
+import KeyboardManager from "@/components/KeyboardManagerMinimalist.astro"
+import FlechaRetrocederMinimalist from "@/components/sections/FlechaRetrocederMinimalist.astro"
+
+import { getLangFromUrl } from "@/i18n/utils.ts";
+
+// Obtener idioma actual desde la URL
+const lang = getLangFromUrl(Astro.url);
+const basics = lang === "es"
+// Importar el JSON de traducciones
+const translations = await import('@/i18n/traducciones.json');
+const t = translations[lang];
+
+---
+
+<Layout title={`Portafolio de ${t.name} - ${t.label}`}>
+  <FlechaRetrocederMinimalist />
+
+  <main>
+    <Hero />
+    <About />
+    <Experience />
+    <Education />
+    <Projects />
+    <Skills />
+  </main>
+
+  <KeyboardManager />
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
+</style>

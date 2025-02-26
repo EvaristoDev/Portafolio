@@ -1,0 +1,28 @@
+{
+    "es": {
+      "name": "Evaristo Sandoval Gil",
+      "work_experience": "Experiencia laboral",
+      "projects": "Proyectos",
+      "project": "Proyecto",
+      "certifications": "Certificaciones",
+      "certification": "Certificación",
+      "skills": "Habilidades",
+      "about_me": "Sobre mí",
+      "education": "Educación",
+      "label":"Full Stack Developer con un 1 año de experiencia"
+
+    },
+    "en": {
+      "name": "Evaristo Sandoval Gil",
+      "work_experience": "Work Experience",
+      "projects": "Projects",
+      "project": "Project",
+      "certifications": "Certifications",
+      "certification": "Certification",
+      "skills": "Skills",
+      "about_me": "About Me",
+      "education": "Education",
+      "label":"Full Stack Developer with 1 year of experience"
+    }
+  }
+  

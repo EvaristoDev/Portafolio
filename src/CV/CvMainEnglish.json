@@ -1,0 +1,104 @@
+{
+  "basicsmain": {
+    "name": "Hello! I'm Evaristo Sandoval Gil",
+    "label": "Full Stack Developer",
+    "image": "/path/to/your/profile/image.jpg",
+    "email": "your.email@example.com",
+    "phone": "+34 123456789",
+    "url": "https://yourwebsite.com",
+    "summary": "Passionate Full Stack Developer with experience in creating modern and scalable web applications. Specialized in technologies such as JavaScript, React, Node.js, MongoDB, and PostgreSQL. My focus is on building efficient and high-quality solutions, emphasizing user experience and best development practices. I am always learning new technologies and improving my skills to stay up-to-date with the latest trends.",
+    "location": {
+      "address": "",
+      "postalCode": "12345",
+      "city": "Your City",
+      "countryCode": "ES",
+      "region": "Spain"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "evaristosandoval",
+        "url": "https://www.linkedin.com/in/evaristo-sandoval-gil-86a6a0291/"
+      },
+      {
+        "network": "GitHub",
+        "username": "evaristosandoval",
+        "url": "https://github.com/EvaristoDev"
+      },
+      {
+        "network": "Mail",
+        "username": "evaristosandoval",
+        "url": "evaristosandovalgil@gmail.com"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Oesia",
+      "position": ".NET Developer",
+      "url": "https://oesia.com",
+      "startDate": "2024-03-01",
+      "endDate": "2024-09-01",
+      "summary": "My main role was the maintenance and development of a desktop application for managing ElPozo, using technologies such as Visual Basic, SQL, PL/SQL, Git, and DevExpress, in addition to receiving training in ASP.NET and Android Studio."
+    },
+    {
+      "name": "Factories",
+      "position": "Line Operator",
+      "url": "",
+      "summary": "I worked in various companies, such as ElPozo, Nueva Cocina Mediterránea, Cobuco SL, Bazar El Paso, Marín Giménez, Frucimur, among others. Throughout my work experience, I have developed skills in the reception, inspection and proper storage of raw materials and packaging materials. I have also carried out tasks such as cutting, chopping, mixing and washing ingredients according to the requirements of the production process. In addition, I have supervised the correct operation of the machines and made adjustments when necessary in the production line, ensuring the safe and efficient handling of food. Also by working in a computer store, I have developed skills in technical advice, customer support, inventory management of technological products and computer problem solving, strengthening my ability to work in a team and adaptability in dynamic environments."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project 1",
+      "description": "Brief description of the project. You can include technologies used or the purpose of the project.",
+      "highlights": [
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "url": "https://project1.com"
+    },
+    {
+      "name": "Project 2",
+      "description": "Brief description of the project. You can include technologies used or the purpose of the project.",
+      "highlights": [
+        "Vue.js",
+        "Express",
+        "PostgreSQL"
+      ],
+      "url": "https://project2.com"
+    },
+    {
+      "name": "Project 3",
+      "description": "Brief description of the project. You can include technologies used or the purpose of the project.",
+      "highlights": [
+        "Angular",
+        "NestJS",
+        "MySQL"
+      ],
+      "url": "https://project3.com"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Big Data in the Transport Sector",
+      "date": "2025-01-01",
+      "issuer": "Foundation Maude",
+      "url": "../public/BigDataeIA.webp"
+    },
+    {
+      "name": "C# Basic",
+      "date": "2024-02-01",
+      "issuer": "Udemy",
+      "url": "../public/Basico.webp"
+    },
+    {
+      "name": "C# Intermediate",
+      "date": "2024-03-01",
+      "issuer": "Udemy",
+      "url": "../public/Intermedio.webp"
+    }
+   
+  ]
+}

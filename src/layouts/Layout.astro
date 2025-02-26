@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
+  <title>Astro Basics</title>
+</head>
+<body class="relative">
+  <!-- Gradiente para modo oscuro -->
+  <div id="dark-bg" class="top-0 left-0 z-[-2] min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] fixed"></div>
+  <!-- Gradiente para modo claro -->
+  <div id="light-bg" class="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#C9EBFF,transparent)]"></div></div>
+
+  <div class="relative z-10">
+    <slot />
+  </div>
+</body>
+</html>
+<style is:global>
+	/* Estilos generales */
+	html {
+	  font-family:
+		Menlo,
+		Monaco,
+		Lucida Console,
+		"Courier New",
+		Courier,
+		monospace;
+	  
+	  scroll-behavior: smooth;
+	  letter-spacing: -0.025rem;
+	}
+  
+	/* Encabezados en modo claro */
+	h1, h2, h3, h4 {
+	  margin: 10;
+	  font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		"Open Sans",
+		"Helvetica Neue",
+		sans-serif;
+	  color: #111; /* Color de texto oscuro para encabezados */
+	}
+  
+	.dark h1, .dark h2, .dark h3:not(.dark\:text-gray-800), .dark h4 {
+  color: #f3f4f6;
+}
+.theme-dependent-bg {
+    background-color: white 
+  }
+  
+  html.dark .theme-dependent-bg {
+    background-color: #0a0a0a 
+  }
+
+  /* Ocultar fondos no activos */
+  #dark-bg:not(.dark-active),
+  #light-bg:not(.light-active) {
+    display: none;
+  }
+  
+.dark p:not(.dark\:text-gray-600) {
+  color: #d1d5db; /* Texto gris claro en modo oscuro */
+}
+
+.project-card-container {
+    background-color: white !important;
+    box-shadow: 0 4px 6px -1px rgb(147 197 253 / 0.5) !important;
+  }
+  
+  .dark .project-card-container {
+    background-color: #0a0a0a !important;
+  }
+  
+  .project-card-title {
+    color: #1f2937 !important; /* gray-800 */
+  }
+  
+  .dark .project-card-title {
+    color: #e5e7eb !important; /* gray-200 */
+  }
+  
+  .project-card-description {
+    color: #4b5563 !important; /* gray-600 */
+  }
+  
+  .dark .project-card-description {
+    color: #9ca3af !important; /* gray-400 */
+  }
+
+	.dark-bg .text-blue-400 {
+	  color: #60a5fa; /* Azul claro para enlaces y botones */
+	}
+  
+	/* Fondo azul oscuro con texto blanco */
+	.dark-bg .bg-blue-900 {
+	  background-color: #1e3a8a; /* Fondo azul oscuro */
+	  color: #ffffff; /* Texto blanco */
+	}
+
+
+  </style>

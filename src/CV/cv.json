@@ -1,0 +1,235 @@
+{
+  "basics": {
+    "name": "Evaristo Sandoval Gil",
+    "label": "Full Stack Developer .NET",
+    "image": "/Evaristo.webp",
+    "email": "evaristosandovalgil@gmail.com",
+    "phone": "+34 605365354",
+    "url": "https://Evaristo.dev",
+    "summary": "Soy Evaristo, tengo 22 años y soy de Murcia. Tras terminar mis estudios, me enfoqué en seguir aprendiendo sobre cómo ser full stack developer con .NET, profundizando en proyectos y adquiriendo experiencia en diversas áreas del desarrollo. Actualmente, busco nuevos retos laborales en el mundo .NET y tecnológico.",
+    "location": {
+      "address": "",
+      "postalCode": "30170",
+      "city": "Mula Murcia",
+      "countryCode": "ES",
+      "region": "España"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Evaristo Sandoval Gil",
+        "url": "https://www.linkedin.com/in/evaristo-sandoval-gil-86a6a0291/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Evaristo15",
+        "url": "https://github.com/EvaristoDev"
+      }
+     
+    ]
+  },
+  "work": [
+    {
+      "name": "Oesia",
+      "position": "Desarrollador .NET",
+      "url": "https://grupooesia.com/",
+      "startDate": "2024-03-15",
+      "endDate": "2024-09-27",
+      "summary": "Mi principal función fue el mantenimiento y desarrollo de una aplicación de escritorio para la gestión de ElPozo, utilizando tecnologías como Visual Basic, SQL, PL/SQL, Git y DevExpress,además de recibir formación en ASP.NET y Android Studio.",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Nueva Cocina Mediterranea",
+      "position": "Operario de linea ",
+      "url": "https://twitch.tv/midudev",
+      "startDate": "2024-11-15",
+      "endDate": "2025-01-15",
+      "summary": " Empaquetado del producto para su correcto envió. Supervisión del flujo continuo de producción, garantizando que se cumpla con los objetivos de producción y plazos establecidos. Envasado , etiquetado y empaquetado del producto final",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Marín Giménez",
+      "position": "Operario de linea ",
+      "startDate": "2023-06-25",
+      "endDate": "2023-08-25",
+      "summary": "Recepción, inspección y almacenamiento adecuado de materias primas y materiales de embalaje. Realización de tareas de corte, picado, mezclado, o lavado de ingredientes según el proceso de producción.  Supervisión del buen funcionamiento de las máquinas y ajustes según sea necesario en línea de producción. Manipulación de alimentos en línea de producción",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "education": [
+    {
+    "institution": "IES Rivera de los Molinos",
+    "url": "https://www.uoc.edu/portal/es/index.html",
+    "area": "Desarrollador Web",
+    "studyType": "Bachelor",
+    "startDate": "2022-09-15",
+    "endDate": "2024-06-17",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  },
+  {
+    "institution": "IES Rivera de los Molinos",
+    "url": "https://www.uoc.edu/portal/es/index.html",
+    "area": "Sistemas Informaticos y Redes",
+    "studyType": "Bachelor",
+    "startDate": "2019-09-15",
+    "endDate": "2021-06-17",
+    "score": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }
+],
+  
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "certificates": [{
+    "name": "Certificate",
+    "date": "2021-11-07",
+    "issuer": "Company",
+    "url": "https://certificate.com"
+  }],
+  "publications": [{
+    "name": "Publication",
+    "publisher": "Company",
+    "releaseDate": "2014-10-01",
+    "url": "https://publication.com",
+    "summary": "Description…"
+  }],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "NET",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "Csharp",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "VisualBasic",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{
+    "name": "Jane Doe",
+    "reference": "Reference…"
+  }],
+  "projects": [
+    
+  ]
+}
