@@ -1,103 +1,102 @@
 {
-    "basicsmain": {
-      "name": "¡Hola! Soy Evaristo Sandoval Gil",
-      "label": "Desarrollador Full Stack",
-      "image": "/path/to/your/profile/image.jpg",
-      "email": "your.email@example.com",
-      "phone": "+34 123456789",
-      "url": "https://yourwebsite.com",
-      "summary": "¡Hola! Soy Evaristo, tengo 22 años y soy de Murcia. Desde que descubrí .NET, me cautivó por su potencial y versatilidad.\n\nTanto es así, que, a pesar de tener pocos conocimientos iniciales, decidí hacer mi TFG en esta tecnología, marcando el inicio de mi compromiso con el aprendizaje continuo.\n\nCuento con un grado superior en desarrollo web y un grado medio en sistemas microinformáticos y redes, lo que me ha permitido construir una base sólida y mantenerme al día con las últimas tendencias tecnológicas.\n\nTras mi TFG, tuve la oportunidad de aportar valor en una empresa, experiencia que reforzó mi pasión por compartir conocimientos y aprender de los demás. Me gusta transmitir lo que sé y, a su vez, valoro mucho la escucha activa, ya que considero que es fundamental para el crecimiento personal y profesional.\n\nDedico mi tiempo a perfeccionar mis habilidades y a explorar nuevas ideas, motivado por el deseo de contribuir con soluciones innovadoras. Actualmente, estoy en la búsqueda de nuevos retos laborales que me permitan seguir desarrollándome en el entorno de .NET y otras tecnologías emergentes.",
-      "location": {
-        "address": "",
-        "postalCode": "12345",
-        "city": "Tu Ciudad",
-        "countryCode": "ES",
-        "region": "España"
-      },
-      "profiles": [
-        {
-          "network": "LinkedIn",
-          "username": "evaristosandoval",
-          "url": "https://www.linkedin.com/in/evaristo-sandoval-gil-86a6a0291/"
-        },
-        {
-          "network": "GitHub",
-          "username": "evaristosandoval",
-          "url": "https://github.com/EvaristoDev"
-        },
-        {
-          "network": "Correo",
-          "username": "evaristosandoval",
-          "url": "evaristosandovalgil@gmail.com"
-        }
-      ]
+  "basicsmain": {
+    "name": "¡Hola! Soy Evaristo Sandoval Gil",
+    "label": "Desarrollador Full Stack",
+    "image": "/path/to/your/profile/image.jpg",
+    "email": "your.email@example.com",
+    "phone": "+34 123456789",
+    "url": "https://yourwebsite.com",
+    "summary": "¡Hola! Soy Evaristo, tengo 22 años y soy de Murcia. Desde que descubrí .NET, me cautivó por su potencial y versatilidad.\n\nTanto es así, que, a pesar de tener pocos conocimientos iniciales, decidí hacer mi TFG en esta tecnología, marcando el inicio de mi compromiso con el aprendizaje continuo.\n\nCuento con un grado superior en desarrollo web y un grado medio en sistemas microinformáticos y redes, lo que me ha permitido construir una base sólida y mantenerme al día con las últimas tendencias tecnológicas.\n\nTras mi TFG, tuve la oportunidad de aportar valor en una empresa, experiencia que reforzó mi pasión por compartir conocimientos y aprender de los demás. Me gusta transmitir lo que sé y, a su vez, valoro mucho la escucha activa, ya que considero que es fundamental para el crecimiento personal y profesional.\n\nDedico mi tiempo a perfeccionar mis habilidades y a explorar nuevas ideas, motivado por el deseo de contribuir con soluciones innovadoras. Actualmente, estoy en la búsqueda de nuevos retos laborales que me permitan seguir desarrollándome en el entorno de .NET y otras tecnologías emergentes.",
+    "location": {
+      "address": "",
+      "postalCode": "12345",
+      "city": "Tu Ciudad",
+      "countryCode": "ES",
+      "region": "España"
     },
-    "work": [
+    "profiles": [
       {
-        "name": "Oesia",
-        "position": "Desarrollador .NET",
-        "url": "https://oesia.com",
-        "startDate": "2024-03-01",
-        "endDate": "2024-09-01",
-        "summary": "Mi principal función fue el mantenimiento y desarrollo de una aplicación de escritorio para la gestión de ElPozo, utilizando tecnologías como Visual Basic, SQL, PL/SQL, Git y DevExpress, además de recibir formación en ASP.NET y Android Studio."
+        "network": "LinkedIn",
+        "username": "evaristosandoval",
+        "url": "https://www.linkedin.com/in/evaristo-sandoval-gil-86a6a0291/"
       },
       {
-        "name": "Fabricas",
-        "position": "Operario de línea",
-        "url": "https://nuevacocinamediterranea.com",
-        "summary": "He trabajado en diversas empresas, como ElPozo, Nueva Cocina Mediterránea, Cobuco SL, Bazar El Paso, Marín Giménez, Frucimur, entre otras. A lo largo de mi experiencia laboral, he desarrollado habilidades en la recepción, inspección y almacenamiento adecuado de materias primas y materiales de embalaje. También he llevado a cabo tareas como el corte, picado, mezclado y lavado de ingredientes según los requisitos del proceso de producción. Además, he supervisado el correcto funcionamiento de las máquinas y realizado ajustes cuando ha sido necesario en la línea de producción, garantizando la manipulación segura y eficiente de alimentos. También al trabajar en una tienda de informática, he desarrollado habilidades en el asesoramiento técnico, soporte al cliente, manejo de inventario de productos tecnológicos y resolución de problemas informáticos, fortaleciendo mi capacidad de trabajo en equipo y adaptabilidad en entornos dinámicos."      }
-    ],
-    "projects": [
-      {
-        "name": "Proyecto 1",
-        "description": "Breve descripción del proyecto. Puedes incluir tecnologías utilizadas o el propósito del proyecto.",
-        "highlights": [
-          "React",
-          "Node.js",
-          "MongoDB"
-        ],
-        "url": "https://proyecto1.com"
+        "network": "GitHub",
+        "username": "evaristosandoval",
+        "url": "https://github.com/EvaristoDev"
       },
       {
-        "name": "Proyecto 2",
-        "description": "Breve descripción del proyecto. Puedes incluir tecnologías utilizadas o el propósito del proyecto.",
-        "highlights": [
-          "Vue.js",
-          "Express",
-          "PostgreSQL"
-        ],
-        "url": "https://proyecto2.com"
-      },
-      {
-        "name": "Proyecto 3",
-        "description": "Breve descripción del proyecto. Puedes incluir tecnologías utilizadas o el propósito del proyecto.",
-        "highlights": [
-          "Angular",
-          "NestJS",
-          "MySQL"
-        ],
-        "url": "https://proyecto3.com"
-      }
-    ],
-    "certificates": [
-      {
-        "name": "Big Data en el sector transporte",
-        "date": "2023-01-01",
-        "issuer": "Fundacion Maude",
-        "url": "./public/BigDataeIA.webp"
-      },
-      {
-        "name": "C# Básico",
-        "date": "2023-02-01",
-        "issuer": "Udemy",
-        "url": "./public/Basico.webp"
-      },
-      {
-        "name": "C# Intermedio",
-        "date": "2023-03-01",
-        "issuer": "Udemy",
-        "url": "./public/Intermedio.webp"
+        "network": "Correo",
+        "username": "evaristosandoval",
+        "url": "evaristosandovalgil@gmail.com"
       }
     ]
-  }
-  
+  },
+  "work": [
+    {
+      "name": "Oesia",
+      "position": "Desarrollador .NET",
+      "url": "https://oesia.com",
+      "startDate": "2024-03-01",
+      "endDate": "2024-09-01",
+      "summary": "Mi principal función fue el mantenimiento y desarrollo de una aplicación de escritorio para la gestión de ElPozo, utilizando tecnologías como Visual Basic, SQL, PL/SQL, Git y DevExpress, además de recibir formación en ASP.NET y Android Studio."
+    },
+    {
+      "name": "Fabricas",
+      "position": "Operario de línea",
+      "url": "https://nuevacocinamediterranea.com",
+      "summary": "He trabajado en diversas empresas, como ElPozo, Nueva Cocina Mediterránea, Cobuco SL, Bazar El Paso, Marín Giménez, Frucimur, entre otras. A lo largo de mi experiencia laboral, he desarrollado habilidades en la recepción, inspección y almacenamiento adecuado de materias primas y materiales de embalaje. También he llevado a cabo tareas como el corte, picado, mezclado y lavado de ingredientes según los requisitos del proceso de producción. Además, he supervisado el correcto funcionamiento de las máquinas y realizado ajustes cuando ha sido necesario en la línea de producción, garantizando la manipulación segura y eficiente de alimentos. También al trabajar en una tienda de informática, he desarrollado habilidades en el asesoramiento técnico, soporte al cliente, manejo de inventario de productos tecnológicos y resolución de problemas informáticos, fortaleciendo mi capacidad de trabajo en equipo y adaptabilidad en entornos dinámicos."      }
+  ],
+  "projects": [
+    {
+      "name": "Proyecto 1",
+      "description": "Breve descripción del proyecto. Puedes incluir tecnologías utilizadas o el propósito del proyecto.",
+      "highlights": [
+        "React",
+        "Node.js",
+        "MongoDB"
+      ],
+      "url": "https://proyecto1.com"
+    },
+    {
+      "name": "Proyecto 2",
+      "description": "Breve descripción del proyecto. Puedes incluir tecnologías utilizadas o el propósito del proyecto.",
+      "highlights": [
+        "Vue.js",
+        "Express",
+        "PostgreSQL"
+      ],
+      "url": "https://proyecto2.com"
+    },
+    {
+      "name": "Proyecto 3",
+      "description": "Breve descripción del proyecto. Puedes incluir tecnologías utilizadas o el propósito del proyecto.",
+      "highlights": [
+        "Angular",
+        "NestJS",
+        "MySQL"
+      ],
+      "url": "https://proyecto3.com"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Big Data en el sector transporte",
+      "date": "2023-01-01",
+      "issuer": "Fundacion Maude",
+      "url": "BigDataeIA.webp"
+    },
+    {
+      "name": "C# Básico",
+      "date": "2023-02-01",
+      "issuer": "Udemy",
+      "url": "Basico.webp"
+    },
+    {
+      "name": "C# Intermedio",
+      "date": "2023-03-01",
+      "issuer": "Udemy",
+      "url": "Intermedio.webp"
+    }
+  ]
+}
